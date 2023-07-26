@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CARRITO DE COMPRAS</title>
+</head>
+<body>
+    
+    <H1 class="Titulo">EL CARRITO</H1>
+
+    <form id="productForm">
+      <div class="product1" id="Productos"> <img src="/images/argolla de matrimonio.png" alt="Argolla"><br>
+      <label>Argolla de matrimonio $4.000:</label>
+      <input type="number" id="product1" name="product1" value="0">
+      </div>
+      <br>
+      <div class="product2" id="Productos"> <img src="/images/Bafle-removebg-preview.png" alt="Bafle"><br>
+      <label>Bafle $1.050.000:</label>
+      <input type="number" id="product2" name="product2" value="0">
+      </div>
+      <br>
+      <div class="product3" id="Productos"> <img src="/images/cocina-removebg-preview.png" alt="cocina"><br>
+      <label for="product3">Cocina $3.800.000:</label>
+      <input type="number" id="product3" name="product3" value="0">
+      </div>
+      <br>
+      <div class="product4" id="Productos"> <img src="/images/crema-removebg-preview.png" alt="Crema para piel"><br>
+      <label for="product4">Crema para piel $5.000:</label>
+      <input type="number" id="product4" name="product3" value="0">
+      </div>
+      <br>
+
+      <button class="btnA" type="button" onclick="addToCart()">Agregar al carrito</button>
+    </form>
+
+    <form id="productForm">
+      <div class="product5" id="Productos"> <img src="/images/Maceta.png" alt="Maceta pequeña"><br>
+      <label>Maceta pequeña $20.000:</label>
+      <input type="number" id="product5" name="product1" value="0">
+      </div>
+      <br>
+      <div class="product6" id="Productos"> <img src="/images/mochila-removebg-preview.png" alt="Mochilla"><br>
+      <label>Mochilla $500.200:</label>
+      <input type="number" id="product6" name="product2" value="0">
+      </div>
+      <br>
+      <div class="product7" id="Productos"> <img src="/images/Moto de Juquete.png" alt="Moto de Juquete"><br>
+      <label for="product7">Moto de Juquete $1.300.000:</label>
+      <input type="number" id="product7" name="product3" value="0">
+      </div>
+      <br>
+      <div class="product8" id="Productos"> <img src="/images/ollas-removebg-preview.png" alt="Paquete de ollas"><br>
+      <label for="product8">Paquete de ollas $5.100.000:</label>
+      <input type="number" id="product8" name="product3" value="0">
+      </div>
+      <br>
+
+      <button class="btnA" type="button" onclick="addToCart()">Agregar al carrito</button>
+    </form>
+
+    <form id="productForm">
+      <div class="product9" id="Productos"> <img src="/images/Medias.png" alt="Maceta pequeña"><br>
+      <label>Medias $2.000:</label>
+      <input type="number" id="product9" name="product1" value="0">
+      </div>
+      <br>
+      <div class="product10" id="Productos"> <img src="/images/relog.png" alt="Mochilla"><br>
+      <label>Relog $5.200:</label>
+      <input type="number" id="product10" name="product2" value="0">
+      </div>
+      <br>
+      <div class="product11" id="Productos"> <img src="/images/Sabanas.png" alt="Moto de Juquete"><br>
+      <label for="product11">Sabanas $2.000.500:</label>
+      <input type="number" id="product11" name="product3" value="0">
+      </div>
+      <br>
+      <div class="product12" id="Productos"> <img src="/images/Toallas.png" alt="Paquete de ollas"><br>
+      <label for="product12">Toallas $1.000:</label>
+      <input type="number" id="product12" name="product3" value="0">
+      </div>
+      <br>
+
+      <button class="btnA" type="button" onclick="addToCart()">Agregar al carrito</button>
+    </form>
+
+
+
+
+    <div id="cart">
+      <h2>Carrito:</h2>
+      <ul id="cartList"></ul>
+      <p id="total">Total a pagar: $0</p>
+      <button type="button" onclick="checkout()">Pagar</button>
+    </div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
